@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+/* header */
+h1 {
+    font-family: Neue Haas Grotesk Text Pro;
+    margin: 0;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 60px;
+    line-height: 79px;
+}
+
+.made-by,
+a {
+    font-family: Neue Haas Grotesk Text Pro;
+    font-size: 16px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.made-by {
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 2px black solid;
+    width: 100%;
+    background-color: #F0893E;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding: 5px; */
+    background-color: #DCBEE8;
+    border-bottom: 2px black solid;
+}
+
+.item-1 {
+    flex-grow: 8;
+    border-right: 3px solid black;
+    text-align: center;
+    align-self: center;
+}
+
+.nav {
+    display: flex;
+    flex-grow:2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    width:100%;
+    background-color: white;
+}
+
+
+
+
+/* canvas */
+.container-canvas>div {
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.container-canvas>div:hover {
+    background-color: black;
+}
+
+.container-canvas {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    width: 500px;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
