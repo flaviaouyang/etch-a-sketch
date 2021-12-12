@@ -6,3 +6,6 @@
   3. JavaScript
 
 **LIVE DEMO**: https://flaviaouyang.github.io/etch-a-sketch/
+
+## Issues
+- 12/11/2021: Share button clipboard function does not work with Chrome but works with Safari.
