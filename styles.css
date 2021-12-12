@@ -99,9 +99,9 @@ a:hover {
     height: 223px;
 }
 
-.option-item p:hover{
+.option-item div:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 .mono {
@@ -141,4 +141,9 @@ a:hover {
     width: 150px;
     background-color:#F0893E;
     color: white;
+}
+
+.save-item div:hover{
+    cursor: pointer;
+    color: black;
 }
