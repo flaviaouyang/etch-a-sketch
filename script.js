@@ -41,7 +41,7 @@ function polyPaint(element) {
 }
 
 createCanvas = (mode) => {
-    canvas.innerHTML = "";
+  canvas.innerHTML = "";
   for (let i = 0; i < 400; i++) {
     const div = document.createElement("div");
     div.classList.add("square");
@@ -55,9 +55,9 @@ createCanvas = (mode) => {
     canvas.appendChild(div);
   }
 };
-mono.addEventListener("click", function() {
-    createCanvas("mono");
-})
+mono.addEventListener("click", function () {
+  createCanvas("mono");
+});
 clear.addEventListener("click", clearCanvas);
 poly.addEventListener("click", function () {
   createCanvas("poly");
