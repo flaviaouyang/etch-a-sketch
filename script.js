@@ -21,22 +21,18 @@ const mono = document.querySelector(".mono");
 const poly = document.querySelector(".poly");
 
 function monoPaint(element) {
-  console.log("mono triggered");
   element.target.style.backgroundColor = "black";
 }
 
 function clearCanvas() {
-  console.log("clear triggered");
   canvas.innerHTML = "";
   createCanvas("mono");
 }
 
 function polyPaint(element) {
-  console.log("triggered");
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
-  console.log(`rgb(${r}, ${g}, ${b})`);
   element.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
 
