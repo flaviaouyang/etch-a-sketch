@@ -13,7 +13,7 @@
 
 ## Workflow
 
-- Designed the [UI](img/UI.png) using Figma
+- Designed [User Interface](img/UI.png) using Figma
 - Established structure and content with HTML
 - Added style and design using CSS
 - Coded functionalities of an etch-a-sketch using JS
