@@ -8,7 +8,6 @@
   2. CSS
   3. JavaScript
 
----
 [**LIVE DEMO**](https://flaviaouyang.github.io/etch-a-sketch/)
 ---
 
