@@ -1,24 +1,19 @@
-// copy  website address to clipboard
-function copyAddress() {
-  navigator.clipboard.writeText(
-    "https://flaviaouyang.github.io/etch-a-sketch/"
-  );
-  alert("Website URL copied to clipboard");
-}
-
 const share = document.getElementById("share");
+const clearGrid = document.getElementById("clear-grid");
+clearGrid.addEventListener("click", function(){
+  gridMode = "none";
+  clearCanvas();
+});
 share.addEventListener("click", function () {
-  if (!navigator.clipboard) {
-    alert("You browser does not support this feature");
-    return false;
-  }
-  copyAddress();
+  gridMode = "default";
+  clearCanvas();
 });
 
 const canvas = document.querySelector(".canvas-container");
 const clear = document.querySelector(".clear");
 const mono = document.querySelector(".mono");
 const poly = document.querySelector(".poly");
+let gridMode = "default";
 
 function monoPaint(element) {
   console.log("mono triggered");
@@ -28,7 +23,7 @@ function monoPaint(element) {
 function clearCanvas() {
   console.log("clear triggered");
   canvas.innerHTML = "";
-  createCanvas("mono");
+  createCanvas("mono", gridMode);
 }
 
 function polyPaint(element) {
@@ -40,12 +35,14 @@ function polyPaint(element) {
   element.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
 
-createCanvas = (mode) => {
+createCanvas = (mode, grid="default") => {
   canvas.innerHTML = "";
   for (let i = 0; i < 400; i++) {
     const div = document.createElement("div");
     div.classList.add("square");
-    div.style.border = "1px solid black";
+    if (grid === "default") {
+      div.style.border = "1px solid black";
+    }
     div.style.backgroundColor = "white";
     if (mode === "mono") {
       div.addEventListener("mouseover", monoPaint);
@@ -56,10 +53,10 @@ createCanvas = (mode) => {
   }
 };
 mono.addEventListener("click", function () {
-  createCanvas("mono");
+  createCanvas("mono", gridMode);
 });
 clear.addEventListener("click", clearCanvas);
 poly.addEventListener("click", function () {
-  createCanvas("poly");
+  createCanvas("poly", gridMode);
 });
-createCanvas("mono");
+createCanvas("mono", gridMode);
