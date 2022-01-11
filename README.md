@@ -14,8 +14,8 @@
 ## Workflow
 
 - Designed [User Interface](img/UI.png) using Figma
-- Established structure and content with HTML
-- Added style and design using CSS
+- Wrote HTML file next to establish structure and content
+- Styled the webpage with CSS
 - Coded functionalities of an etch-a-sketch using JS
 
 ## Issues
