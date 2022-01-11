@@ -79,7 +79,7 @@ a:hover {
 .main-container {
     display: flex;
     flex-direction: row;
-    height: 669px;
+    height: 631px;
 }
 
 /* options */
@@ -157,7 +157,7 @@ a:hover {
     color: white;
 }
 
-#share:hover{
+#clear-grid:hover, #share:hover{
     cursor: pointer;
     color: black;
 }
