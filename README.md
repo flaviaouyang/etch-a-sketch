@@ -21,8 +21,4 @@
 ## Issues
 
 - 12/11/2021: Share button clipboard function does not work with Chrome but works with Safari. (FIXED)
-- 01/10/2022: Chrome and Safari's different dimension resulted in Safari webpage's footer is not at the end of the page.
-
-## `TODO`
-
-- [ ] responsive design
+- 01/10/2022: Chrome and Safari's different dimension resulted in Safari webpage's footer is not at the end of the page. (FIXED)
